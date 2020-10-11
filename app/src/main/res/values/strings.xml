@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Two_screen</string>
+    <string name="next_activity_button">Next Activity</string>
+    <string name="description_main_text_view">Put to the next screen</string>
+    <string name="description_next_text_view">Second screen count:</string>
+    <string name="count">0</string>
+</resources>
