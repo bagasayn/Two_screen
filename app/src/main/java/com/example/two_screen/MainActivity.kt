@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     fun nextActivity() {
         val screenIntent = Intent(
-            this@MainActivity,
+            this,
             NextActivity::class.java
         )
         count++
