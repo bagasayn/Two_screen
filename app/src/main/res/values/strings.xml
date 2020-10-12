@@ -4,5 +4,7 @@
     <string name="back_activity_button">Back Activity</string>
     <string name="description_main_text_view">Put to the next screen</string>
     <string name="description_next_text_view">Second screen count:</string>
+    <string name="count_next_activity_text_view">0</string>
+    <string name="about_activity_text_view">About</string>
     <string name="count">0</string>
 </resources>
