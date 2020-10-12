@@ -3,6 +3,7 @@ package com.example.two_screen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_next.*
 
 class NextActivity : AppCompatActivity() {
@@ -22,15 +23,8 @@ class NextActivity : AppCompatActivity() {
         count_text_view.text = count.toString()
     }
 
-    fun backActivity() {
-        var count = intent.getIntExtra(TOTAL_COUNT, 0)
-        val screenIntent = Intent(
-            this,
-            NextActivity::class.java
-        )
-        count--
-        screenIntent.putExtra(TOTAL_COUNT, count)
-
-        startActivity(screenIntent)
+    fun backActivity(view: View) {
+        finish()
     }
+
 }

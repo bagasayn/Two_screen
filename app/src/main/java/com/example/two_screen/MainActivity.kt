@@ -3,6 +3,7 @@ package com.example.two_screen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_next.*
 
 
@@ -11,10 +12,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        showCount()
+
     }
 
-    fun nextActivity() {
+    fun nextActivity(view: View) {
         val screenIntent = Intent(
             this,
             NextActivity::class.java
@@ -24,9 +25,5 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(screenIntent)
     }
-    private fun showCount(){
-        val count = intent.getIntExtra(NextActivity.TOTAL_COUNT,0)
 
-        count_text_view.text = count.toString()
-    }
 }
