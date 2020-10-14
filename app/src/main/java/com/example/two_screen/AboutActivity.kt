@@ -1,12 +1,11 @@
-package layout
+package com.example.two_screen
 
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.two_screen.R
 
 
-class AboutActivity() : AppCompatActivity() {
+class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
