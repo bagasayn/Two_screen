@@ -4,6 +4,7 @@ package com.example.two_screen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.two_screen.DataCount.Companion.TOTAL_COUNT
 import kotlinx.android.synthetic.main.activity_main.*
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         if (bundle != null) {
             count_next_activity_text_view.text = bundle.getInt(TOTAL_COUNT, 0)
                 .toString()
+            Log.d("text","${count_next_activity_text_view.text}")
         } else count_next_activity_text_view.text = "0"
     }
 
